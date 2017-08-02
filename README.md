@@ -33,14 +33,6 @@ I hooked `create-react-app` up to an Express Node server. The charts are done wi
 
 A CSS Grid / flexbox layout is used to ensure the chart takes up as much space as it can. Since this layout utilizes modern CSS, the assignment is best viewed in&nbsp;Chrome.
 
-## Month Preview
-The month view mode has a scrubber that allows you to zoom in on particular sets of the given&nbsp;month.
-
-<details open>
-  <summary>GIF Preview</summary>
-  <img src="http://j4p.us/0c2t05161G39/scrubber.gif" />
-</details>
-
 ## Month View
 The month view has a scrubber that allows you to zoom in on particular sets of the given&nbsp;month.
 
