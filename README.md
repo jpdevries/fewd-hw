@@ -33,6 +33,8 @@ I hooked `create-react-app` up to an Express Node server. The charts are done wi
 
 A CSS Grid / flexbox layout is used to ensure the chart takes up as much space as it can. Since this layout utilizes modern CSS, the assignment is best viewed in&nbsp;Chrome.
 
+The fake data coming from the REST API isn't technically using delta updates, but the front end is architected using Redux so that it could seamlessly consume delta updates from an efficient&nbsp;server.
+
 ## Month View
 The month view has a scrubber that allows you to zoom in on particular sets of the given&nbsp;month.
 
@@ -51,6 +53,8 @@ The today view displays a sample point for each hour of the day. It reaches out 
 
 ## Real&ndash;time View
 The real&ndash;time view displays a sample point for every few seconds. It reaches out to the API every ten seconds or so to keep the data&nbsp;fresh.
+
+_Note: If you open up the Developer Tools you should notice that every 10-15 seconds a request for fresh data is made_
 
 <details open>
   <summary>GIF Preview</summary>
