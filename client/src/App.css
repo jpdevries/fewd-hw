@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  max-height: 100vh;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  text-align: center;
+  flex-grow: 1;
+
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-gap: 1rem;
+
+}
+
+.App > * {
+  grid-row: 1 / 1;
+}
+.App > .stage {
+  grid-row: 2 / 2;
+}
+
+.recharts-wrapper {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.recharts-surface {
+  overflow: visible;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+fieldset > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+span.value {
+  margin-left: 1ch;
+  float: right;
+  font-weight: bold;
+}
+
+.recharts-tooltip-wrapper {
+  font-size: .875rem;
+  background: white;
+  text-align: left;
+  padding: .5em;
+}
+
+.recharts-tooltip-wrapper ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
